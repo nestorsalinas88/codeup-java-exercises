@@ -99,11 +99,5 @@ public class ControlFlowExercises {
         if (grade > 0 && grade <= 59){
             System.out.println("F");
         }
-
-
-
-
-
-
     }
 }
