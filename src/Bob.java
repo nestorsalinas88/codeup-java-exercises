@@ -19,6 +19,22 @@ public class Bob {
                 System.out.println("Whoa, chill out!");
                 match = true;
             }
+            if (message.contains("?")){
+                System.out.println("Sure!");
+                match = true;
+            }
+            if(message.contains("Jake")){
+                System.out.println("He is cool!");
+            }
+
+            if(message.replaceAll("\\s","").length() == 0){
+                System.out.println("Fine. Just leave");
+                match = true;
+            }
+            if(message.contains("anything")){
+                System.out.println("whatever!");
+                match = true;
+            }
 
 
         } while (!message.contains("exit"));
