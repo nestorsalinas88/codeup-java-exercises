@@ -33,18 +33,20 @@ public class ControlFlowExercises {
 //
 //        }
 
-//        String buzz = "buzz", fizz = "fizz";
-//
-//        for(int i = 1; i <= 100; i++){
-//            System.out.println(i);
-//            if (i % 15 == 0){
-//                System.out.println(fizz + buzz + i);
-//            } else if (i % 3 == 0){
-//                System.out.println(buzz + i);
-//            }else if(i % 5 == 0) {
-//                System.out.println(fizz + i);
-//            }
-//        }
+        String buzz = "buzz", fizz = "fizz";
+
+        for(int i = 1; i <= 100; i++){
+
+            if (i % 15 == 0){
+                System.out.println(fizz + buzz);
+            } else if (i % 3 == 0){
+                System.out.println(fizz);
+            }else if(i % 5 == 0) {
+                System.out.println(buzz);
+            } else {
+                System.out.println(i);
+            }
+        }
 
 
 //        int userInput;
