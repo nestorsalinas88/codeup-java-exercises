@@ -81,24 +81,24 @@ public class ControlFlowExercises {
         System.out.println("What was your grade?");
 
         int grade = number.nextInt();
-//        if (grade >= 99){
-//            System.out.println("A+");
-//        }
+        if (grade >= 99){
+            System.out.println("A+");
+        }
         if( grade < 99 && grade >= 88){
             System.out.println("A");
         }
-//        if (grade > 80 && grade <= 87){
-//            System.out.println("b");
-//        }
-//        if (grade > 67 && grade <= 79){
-//            System.out.println("C");
-//        }
-//        if (grade > 60 && grade <= 66){
-//            System.out.println("D");
-//        }
-//        if (grade > 0 && grade <= 59){
-//            System.out.println("F");
-//        }
+        if (grade > 80 && grade <= 87){
+            System.out.println("b");
+        }
+        if (grade > 67 && grade <= 79){
+            System.out.println("C");
+        }
+        if (grade > 60 && grade <= 66){
+            System.out.println("D");
+        }
+        if (grade > 0 && grade <= 59){
+            System.out.println("F");
+        }
 
 
 
