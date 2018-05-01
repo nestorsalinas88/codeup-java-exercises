@@ -80,7 +80,7 @@ public class ControlFlowExercises {
         Scanner number = new Scanner(System.in);
         System.out.println("What was your grade?");
 
-//        int grade = number.nextInt();
+        int grade = number.nextInt();
 //        if (grade >= 99){
 //            System.out.println("A+");
 //        }
