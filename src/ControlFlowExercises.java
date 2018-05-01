@@ -45,37 +45,37 @@ public class ControlFlowExercises {
 //        }
 
 
-        int userInput;
-        Scanner lg = new Scanner(System.in);
-
-        System.out.println("Enter a number");
-        userInput = lg.nextInt();
-
-        System.out.println("Number\tCubed\tSquared");
+//        int userInput;
+//        Scanner lg = new Scanner(System.in);
 //
-//        System.out.println(userInput);
-
-        for (int i = 1; i <= userInput; i++){
-            int square = i * i;
-            int cubed = i * i * i;
-            System.out.println(i + "\t" + cubed + "\t" + square);
-
-        }
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Would you like to continue? [Y/N]");
-
-        String hey = sc.nextLine();
-
-        boolean yes = hey.equalsIgnoreCase("Y");
-        boolean no = hey.equalsIgnoreCase("N");
-
-        if (yes == true){
-            System.out.println( "Lets continue");
-        }
-        if (no == true){
-            System.out.println( "Lets Stop then");
-        }
+//        System.out.println("Enter a number");
+//        userInput = lg.nextInt();
+//
+//        System.out.println("Number\tCubed\tSquared");
+////
+////        System.out.println(userInput);
+//
+//        for (int i = 1; i <= userInput; i++){
+//            int square = i * i;
+//            int cubed = i * i * i;
+//            System.out.println(i + "\t" + cubed + "\t" + square);
+//
+//        }
+//
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Would you like to continue? [Y/N]");
+//
+//        String hey = sc.nextLine();
+//
+//        boolean yes = hey.equalsIgnoreCase("Y");
+//        boolean no = hey.equalsIgnoreCase("N");
+//
+//        if (yes == true){
+//            System.out.println( "Lets continue");
+//        }
+//        if (no == true){
+//            System.out.println( "Lets Stop then");
+//        }
 
 
 
