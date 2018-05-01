@@ -6,6 +6,8 @@ public class ControlFlowExercises {
 
 
 
+
+
 //        String fuzz = "fuzz", buzz = "buzz";
 //        for(int i = 0; i <= 100; i++){
 //            System.out.println(i);
@@ -77,7 +79,7 @@ public class ControlFlowExercises {
 //            System.out.println( "Lets Stop then");
 //        }
 
-        Scanner number = new Scanner(System.in);
+       /* Scanner number = new Scanner(System.in);
         System.out.println("What was your grade?");
 
         int grade = number.nextInt();
@@ -98,6 +100,13 @@ public class ControlFlowExercises {
         }
         if (grade > 0 && grade <= 59){
             System.out.println("F");
-        }
+        }*/
+//       long i = 2;
+////       double square = Math.pow(i,i);
+//       do{
+//
+//          System.out.println(i);
+//           i *= i;
+//       } while(i <= 65536);
     }
 }
