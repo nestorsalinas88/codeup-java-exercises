@@ -10,13 +10,26 @@ public class MethodsExercises {
         System.out.println("Multiply (hard): 3 * 3 = " + multiplyMore(3,3));
         System.out.println(hey(5,3));
 //        count(5);
-        Scanner sc = new Scanner(System.in).useDelimiter("\n");
 
+//        calling method to allow user to enter a number between 1 - 10
+        Scanner sc = new Scanner(System.in).useDelimiter("\n");
         System.out.println("Enter a number between 1 and 10: ");
         int input = sc.nextInt();
         getInteger(1,10, input);
 
-//        getFactorial(userInput);
+//        calling  method to get number and create a factorial up to that number
+
+        System.out.println("For factorial please a number from 1-10: ");
+        int factInt = sc.nextInt();
+        getFactorial(factInt);
+
+        System.out.println(" ");
+        System.out.println("Please enter the number of sides on a pair of dice: ");
+        int sides = sc.nextInt();
+        diceRoll(sides);
+
+
+
     }
 
     public  static int add(int a, int b){
@@ -90,27 +103,45 @@ public class MethodsExercises {
 
         System.out.print("That is not a valid number! Please enter an integer");
         int input = sc.nextInt();
-        int userInput = getInteger(1, 10, input);
+        getInteger(1, 10, input);
         return x;
 
 
     }
 //
-    public static long  getFactorial(int n){
-        Scanner sc = new Scanner(System.in).useDelimiter("\n");
-        System.out.println("Do you wish to continue? Enter yes/no: ");
-        String confirm = sc.next();
-        long factResult = 1;
-        if(n >= 1 && n <= 10){
-            System.out.println(n + "! = ");
-            for(int i = 1; i <= n; i++){
-                factResult = i * factResult;
-                if (i> 1 && i <n){
-                    System.out.println("n " + i);
-                } else if(i == n)
-            }
+    public static long getFactorial(int number) {
+
+        String multiplyString = "! = 1 ";
+        int total = 1;
+
+        System.out.println("1"+ multiplyString + " = " + total);
+
+        for(int i = 2; i <= number; i++) {
+
+            total = total*i;
+            multiplyString += "x "+ i + " ";
+            System.out.println(i + multiplyString + " = " + total);
+
         }
+
+        return (long) total;
     }
+    public static long diceRoll(int sides){
+        Scanner sc = new Scanner(System.in).useDelimiter("\n");
+        long randOne = Math.round(Math.random() * sides) + 1;
+        System.out.println("First dice rolls " + randOne);
+        double randTwo = Math.round(Math.random() * sides) + 1;
+        System.out.println("Second dice rolls" + randTwo);
+        System.out.println("Would you like to roll again? Yes/No");
+        String confirm = sc.next();
+        if(confirm.equals("Yes") || confirm.equals("yes")){
+            diceRoll(sides);
+        }
+        return sides;
+
+    }
+
+
 
 
 
