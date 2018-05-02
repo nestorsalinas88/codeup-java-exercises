@@ -10,6 +10,11 @@ public class MethodsExercises {
         System.out.println("Multiply (hard): 3 * 3 = " + multiplyMore(3,3));
         System.out.println(hey(5,3));
         count(5);
+
+        int userinput = getInteger(1,10);
+        System.out.println("Valid input: " + userinput);
+
+        getFactorial(userinput);
     }
 
     public  static int add(int a, int b){
@@ -60,17 +65,51 @@ public class MethodsExercises {
         count(n - 1);
     }
 
+
+//    ublic static int hey(int n, int m) {
+//        if(m == 0){
+//            return 0;
+//        }
+//        if (m == 4){
+//            return n;
+//
+//        }
+//        return m + hey(n,m + 1);
+//
+//
+//    }
     public static int getInteger(int min, int max){
         Scanner sc = new Scanner(System.in);
         int input;
-
-    do {
-        System.out.print("Enter a number between" + min + " and " + max);
+        System.out.print("Enter a number between" + min + " and " + max + " > ");
         input = sc.nextInt();
-    } while (input < min || input > max);
 
-    return input;
+        return input;
+        if (input > min){
+            return getInteger(min, max);
+        }
+        else if (input <= max){
+            return  getInteger(min, max);
+        } else {
+            return min;
+        }
+
+
     }
+
+    public static long  getFactorial(int n){
+        String multiply = "! = 1";
+        int total = 1;
+        System.out.println("1" + multiply + " = " + total);
+        for (int i = 2; i <= n; i++){
+            total = total * i;
+            multiply += "x " + i + " ";
+            System.out.println(i + multiply + " = " + total);
+        }
+        return (long) total;
+    }
+
+
 
 
 }
