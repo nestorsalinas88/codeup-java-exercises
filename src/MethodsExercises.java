@@ -9,12 +9,14 @@ public class MethodsExercises {
         System.out.println("modulus: 6 % 3 = " + modulus(6,3));
         System.out.println("Multiply (hard): 3 * 3 = " + multiplyMore(3,3));
         System.out.println(hey(5,3));
-        count(5);
+//        count(5);
+        Scanner sc = new Scanner(System.in).useDelimiter("\n");
 
-        int userinput = getInteger(1,10);
-        System.out.println("Valid input: " + userinput);
+        System.out.println("Enter a number between 1 and 10: ");
+        int input = sc.nextInt();
+        getInteger(1,10, input);
 
-        getFactorial(userinput);
+//        getFactorial(userInput);
     }
 
     public  static int add(int a, int b){
@@ -82,37 +84,32 @@ public class MethodsExercises {
         Scanner sc = new Scanner(System.in).useDelimiter("\n");
 
         if (x >= min && x <= max){
-            System.out.println("That number you entered: " + x);
+            System.out.println("That number you entered is: " + x);
             return x;
         }
 
-        System.out.print("Thats ");
-
-
-        int input;
-        input = sc.nextInt();
-
-        return input;
-
-        else if (input < max){
-            return  max;
-        } else {
-            return getInteger(min - 1, max);
-        }
+        System.out.print("That is not a valid number! Please enter an integer");
+        int input = sc.nextInt();
+        int userInput = getInteger(1, 10, input);
+        return x;
 
 
     }
-
+//
     public static long  getFactorial(int n){
-        String multiply = "! = 1";
-        int total = 1;
-        System.out.println("1" + multiply + " = " + total);
-        for (int i = 2; i <= n; i++){
-            total = total * i;
-            multiply += "x " + i + " ";
-            System.out.println(i + multiply + " = " + total);
+        Scanner sc = new Scanner(System.in).useDelimiter("\n");
+        System.out.println("Do you wish to continue? Enter yes/no: ");
+        String confirm = sc.next();
+        long factResult = 1;
+        if(n >= 1 && n <= 10){
+            System.out.println(n + "! = ");
+            for(int i = 1; i <= n; i++){
+                factResult = i * factResult;
+                if (i> 1 && i <n){
+                    System.out.println("n " + i);
+                } else if(i == n)
+            }
         }
-        return (long) total;
     }
 
 
