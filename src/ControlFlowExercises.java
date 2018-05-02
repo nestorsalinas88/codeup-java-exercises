@@ -22,16 +22,16 @@ public class ControlFlowExercises {
 //            }
 //        }
 
-//        for(int i = 2; i <= 15; i++){
-//            System.out.println("i is " + i);
-//
-//        }
-//
-//        for(int i = 0; i <= 10; i++)
-//        {
-//            System.out.println("i is " + i);
-//
-//        }
+        for(int i = 2; i <= 15; i++){
+            System.out.println("i is " + i);
+
+        }
+
+        for(int i = 0; i <= 10; i++)
+        {
+            System.out.println("i is " + i);
+
+        }
 
         String buzz = "buzz", fizz = "fizz";
 
@@ -49,39 +49,24 @@ public class ControlFlowExercises {
         }
 
 
-//        int userInput;
-//        Scanner lg = new Scanner(System.in);
-//
-//        System.out.println("Enter a number");
-//        userInput = lg.nextInt();
-//
-//        System.out.println("Number\tCubed\tSquared");
-////
-////        System.out.println(userInput);
-//
-//        for (int i = 1; i <= userInput; i++){
-//            int square = i * i;
-//            int cubed = i * i * i;
-//            System.out.println(i + "\t" + cubed + "\t" + square);
-//
-//        }
-//
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Would you like to continue? [Y/N]");
-//
-//        String hey = sc.nextLine();
-//
-//        boolean yes = hey.equalsIgnoreCase("Y");
-//        boolean no = hey.equalsIgnoreCase("N");
-//
-//        if (yes == true){
-//            System.out.println( "Lets continue");
-//        }
-//        if (no == true){
-//            System.out.println( "Lets Stop then");
-//        }
+        int userInput;
+        Scanner lg = new Scanner(System.in);
 
-       /* Scanner number = new Scanner(System.in);
+        System.out.println("Enter a number");
+        userInput = lg.nextInt();
+
+        System.out.println("Number\tCubed\tSquared");
+//
+//        System.out.println(userInput);
+
+        for (int i = 1; i <= userInput; i++){
+            int square = i * i;
+            int cubed = i * i * i;
+            System.out.println(i + "\t" + cubed + "\t" + square);
+
+        }
+
+       Scanner number = new Scanner(System.in);
         System.out.println("What was your grade?");
 
         int grade = number.nextInt();
@@ -102,13 +87,34 @@ public class ControlFlowExercises {
         }
         if (grade > 0 && grade <= 59){
             System.out.println("F");
-        }*/
+        }
+
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Would you like to continue? [Y/N]");
+
+        String hey = sc.nextLine();
+
+        boolean yes = hey.equalsIgnoreCase("Y");
+        boolean no = hey.equalsIgnoreCase("N");
+
+        if (yes == true){
+            System.out.println( "Lets continue");
+        } else{
+            System.out.println( "Lets Stop then");
+        }
 //       long i = 2;
-////       double square = Math.pow(i,i);
+//       double square = Math.pow(i,i);
 //       do{
 //
 //          System.out.println(i);
 //           i *= i;
 //       } while(i <= 65536);
+
+    }
+
+    public static int number{
+
+
     }
 }
