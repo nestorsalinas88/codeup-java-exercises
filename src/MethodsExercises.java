@@ -78,20 +78,26 @@ public class MethodsExercises {
 //
 //
 //    }
-    public static int getInteger(int min, int max){
-        Scanner sc = new Scanner(System.in);
+    public static int getInteger(int min, int max, int x){
+        Scanner sc = new Scanner(System.in).useDelimiter("\n");
+
+        if (x >= min && x <= max){
+            System.out.println("That number you entered: " + x);
+            return x;
+        }
+
+        System.out.print("Thats ");
+
+
         int input;
-        System.out.print("Enter a number between" + min + " and " + max + " > ");
         input = sc.nextInt();
 
         return input;
-        if (input > min){
-            return getInteger(min, max);
-        }
-        else if (input <= max){
-            return  getInteger(min, max);
+
+        else if (input < max){
+            return  max;
         } else {
-            return min;
+            return getInteger(min - 1, max);
         }
 
 
