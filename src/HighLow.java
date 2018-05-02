@@ -8,5 +8,10 @@ public class HighLow {
         int guess;
         int i = 1;
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Guess my number dude! ");
+
+
     }
 }
