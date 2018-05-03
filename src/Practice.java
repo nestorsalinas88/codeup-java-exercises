@@ -6,23 +6,23 @@ public class Practice {
 
         public static void main(String s[])
         {
-            Person person = new Person();
+            People people = new People();
 
 // It is necessary to call the other class with proper calling import techniques
-//            Example bellow Check person class
-            person.lastName = "Salinas";
-            System.out.println(person.lastName);
+//            Example bellow Check people class
+            people.lastName = "Salinas";
+            System.out.println(people.lastName);
 
-            person.firstName = "Nestor";
-            System.out.println(person.firstName);
+            people.firstName = "Nestor";
+            System.out.println(people.firstName);
 
-            Person person2 = new Person();
+            People people2 = new People();
 
-            person2.lastName = "Reyes";
-            System.out.println(person2.lastName);
+            people2.lastName = "Reyes";
+            System.out.println(people2.lastName);
 
-            person2.firstName = "Diego";
-            System.out.println(person2.firstName);
+            people2.firstName = "Diego";
+            System.out.println(people2.firstName);
 
 //            play();
 //            print(8);
