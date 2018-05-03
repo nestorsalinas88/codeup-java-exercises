@@ -9,28 +9,46 @@ public class Practice {
             play();
             print(8);
             print(20 < 10);
+            dog();
         }
 
-        public static void play()
+        static void play()
         {
         String userMiddle;
         Scanner us = new Scanner(System.in);
 
-        System.out.println("enter your middle name: ");
+        System.out.println("Hello I am machine!");
         userMiddle = us.nextLine();
 
-            System.out.println(userMiddle);
+        if (userMiddle.contains("?")){
+            System.out.println("Why do you want to know??");
+        } else if (userMiddle.contains("!")){
+            System.out.printf("WOW! I am glad machines will take your jobs!");
+        }
         }
 
-        public static void print(int i)
+        static void print(int i)
         {
             System.out.println("Called print with int parameter");
         }
 
-        public static void print(boolean b)
+        static void print(boolean b)
         {
             System.out.println("Called print with boolean parameter");
         }
+        static void dog(){
+            System.out.println("You're awesome! ");
+        }
+
+//
+//        // instance variables
+//        //
+//        public String firstName;
+//        public String lastName;
+//        // instance method
+//        public String sayHello() {
+//            return lastName + ", " + firstName + " says hi!";
+//        }
 
 
 }
