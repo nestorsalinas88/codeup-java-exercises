@@ -1,4 +1,3 @@
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 import java.util.Scanner;
 
@@ -8,10 +7,19 @@ public class Practice {
         public static void main(String s[])
         {
             Person person = new Person();
-            play();
-            print(8);
-            print(20 < 10);
-            dog();
+
+// It is necessary to call the other class with proper calling import techniques
+//            Example bellow Check person class
+            person.lastName = "Salinas";
+            System.out.println(person.lastName);
+
+            person.firstName = "Nestor";
+            System.out.println(person.firstName);
+
+//            play();
+//            print(8);
+//            print(20 < 10);
+//            dog();
         }
 
         static void play()
