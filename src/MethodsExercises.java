@@ -17,16 +17,15 @@ public class MethodsExercises {
         int input = sc.nextInt();
         getInteger(1,10, input);
 
-//        calling  method to get number and create a factorial up to that number
+        //Factorial
+        int userInput = getInteger(1, 16,  input);
 
-        System.out.println("For factorial please a number from 1-10: ");
-        int factInt = sc.nextInt();
-        getFactorial(factInt);
+        System.out.println("Valid input: " + userInput);
 
-        System.out.println(" ");
-        System.out.println("Please enter the number of sides on a pair of dice: ");
-        int sides = sc.nextInt();
-        diceRoll(sides);
+        getFactorial(userInput);
+
+
+
 
 
 
@@ -107,8 +106,32 @@ public class MethodsExercises {
         return x;
 
 
+
     }
 //
+//    public static long  factorial(int n) {
+//        Scanner sc = new Scanner(System.in).useDelimiter("\n");
+//        System.out.println("Do you wish to continue? Enter yes/no: ");
+//        String confirm = sc.next();
+//        long factResult = 1;
+//        if (confirm.equalsIgnoreCase("yes")) {
+//            if (n >= 1 && n <= 10) {
+//                System.out.println(n + "! = ");
+//                for (int i = 1; i <= n; i++) {
+//                    factResult = i * factResult;
+//                    if (i > 1 && i < n) {
+//                        System.out.println("n " + i);
+//                    } else if (i == n) {
+//                        System.out.println(" n " + i + " = " + factResult);
+//                        return factResult;
+//                    } else {
+//                        System.out.println(" " + i);
+//                    }
+//                }
+//            }
+//        }
+//        return n;
+//    }
     public static long getFactorial(int number) {
 
         String multiplyString = "! = 1 ";
@@ -126,24 +149,5 @@ public class MethodsExercises {
 
         return (long) total;
     }
-    public static long diceRoll(int sides){
-        Scanner sc = new Scanner(System.in).useDelimiter("\n");
-        long randOne = Math.round(Math.random() * sides) + 1;
-        System.out.println("First dice rolls " + randOne);
-        double randTwo = Math.round(Math.random() * sides) + 1;
-        System.out.println("Second dice rolls" + randTwo);
-        System.out.println("Would you like to roll again? Yes/No");
-        String confirm = sc.next();
-        if(confirm.equals("Yes") || confirm.equals("yes")){
-            diceRoll(sides);
-        }
-        return sides;
-
-    }
-
-
-
-
-
 
 }
