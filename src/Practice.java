@@ -1,11 +1,13 @@
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 import java.util.Scanner;
 
 public class Practice {
 //    visibility (static) returnType methodName (paramType1 param 1, paramType2 param 2)
 
-
         public static void main(String s[])
         {
+            Person person = new Person();
             play();
             print(8);
             print(20 < 10);
@@ -39,6 +41,8 @@ public class Practice {
         static void dog(){
             System.out.println("You're awesome! ");
         }
+
+
 
 //
 //        // instance variables
