@@ -16,6 +16,14 @@ public class Practice {
             person.firstName = "Nestor";
             System.out.println(person.firstName);
 
+            Person person2 = new Person();
+
+            person2.lastName = "Reyes";
+            System.out.println(person2.lastName);
+
+            person2.firstName = "Diego";
+            System.out.println(person2.firstName);
+
 //            play();
 //            print(8);
 //            print(20 < 10);
