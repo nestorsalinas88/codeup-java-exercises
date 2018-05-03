@@ -6,14 +6,20 @@ public class Practice {
 
         public static void main(String s[])
         {
-            print();
+            play();
             print(8);
             print(20 < 10);
         }
 
-        public static void print()
+        public static void play()
         {
-            System.out.println("Called print with no parameters");
+        String userMiddle;
+        Scanner us = new Scanner(System.in);
+
+        System.out.println("enter your middle name: ");
+        userMiddle = us.nextLine();
+
+            System.out.println(userMiddle);
         }
 
         public static void print(int i)
