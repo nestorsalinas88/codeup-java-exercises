@@ -2,7 +2,7 @@ package shapes;
 
 import util.Input;
 
-public class CircelApp {
+public class CircleApp {
     private static int circleCount;
 
     static int getCircleCount(){
