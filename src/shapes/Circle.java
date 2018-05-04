@@ -9,7 +9,7 @@ public class Circle {
         this.radius = radius;
     }
     double getArea(){
-        return 2 * Math.PI * radius;
+        return Math.PI * radius * radius;
     }
     double getCircumference(){
         return Math.PI * Math.pow(radius, 2);
