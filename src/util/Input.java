@@ -13,7 +13,7 @@ public class Input {
     }
 
 
-    boolean yesNo() {
+    public boolean yesNo() {
         String input = scanner.nextLine();
 
 //        This Method should return true if the user enters y, yes, or variants thereof, and false otherwise.
@@ -34,7 +34,7 @@ public class Input {
         return scanner.nextInt();
     }
 
-    double getDouble(double min, double max) {
+    public double getDouble(double min, double max) {
 //    The getDouble method should do the same thing, but with decimal numbers.
         System.out.print("Please enter any real number between " + min + " and " + max + ": ");
         double check = getDouble();
@@ -44,7 +44,7 @@ public class Input {
             return check;
         }
     }
-    double getDouble(){
+    public double getDouble(){
         return scanner.nextDouble();
     }
 
