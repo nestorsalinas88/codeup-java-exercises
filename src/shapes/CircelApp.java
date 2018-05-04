@@ -40,7 +40,10 @@ public class CircelApp {
 
         Circle userCircle = new Circle(userRadius);
         System.out.println("This user radius' was " + userRadius);
-        System.out.println("your circle is " + userCircle);
+        System.out.println("Area: " + userCircle.getArea());
+        System.out.println("Circumference: " + userCircle.getCircumference());
+        increaseCircleCount();
+        System.out.println("Would you like to make another? ");
     }
 
 
