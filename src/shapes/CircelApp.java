@@ -17,6 +17,8 @@ public class CircelApp {
         System.out.println("What is the radius?");
         Input input = new Input();
         double userRadius = input.getDouble();
+
+
         Circle userCircle = new Circle(userRadius);
         System.out.println("The radius was" + userRadius);
         System.out.println("Area: " + userCircle.getArea());
@@ -27,12 +29,23 @@ public class CircelApp {
         if (toContinue) {
             makeCircle();
         } else {
-            System.out.println("As you wish, you had made " + getCircleCount() + "!");
+            System.out.println("As you wish, you have made " + getCircleCount() + "!");
         }
+    }
+
+    static void createCircle(){
+        System.out.println("enter another radius?");
+        Input input = new Input();
+        double userRadius = input.getDouble();
+
+        Circle userCircle = new Circle(userRadius);
+        System.out.println("This user radius' was " + userRadius);
+        System.out.println("your circle is " + userCircle);
     }
 
 
     public static void main(String[] args) {
         makeCircle();
+        createCircle();
     }
 }
