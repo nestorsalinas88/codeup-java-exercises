@@ -7,6 +7,7 @@ public class Practice {
         public static void main(String s[])
         {
             People people = new People();
+            play();
 
 // It is necessary to call the other class with proper calling import techniques
 //            Example bellow Check people class
@@ -35,15 +36,25 @@ public class Practice {
         String userMiddle;
         Scanner us = new Scanner(System.in);
 
-        System.out.println("Hello I am machine!");
+        System.out.println("Como le podria servir?");
         userMiddle = us.nextLine();
 
-        if (userMiddle.contains("?")){
-            System.out.println("Why do you want to know??");
-        } else if (userMiddle.contains("!")){
-            System.out.printf("WOW! I am glad machines will take your jobs!");
+
+            do {
+                if (userMiddle.contains("?")){
+                    System.out.println("Su pregunta e");
+
+                } else if (userMiddle.contains("!")){
+                    System.out.printf("WOW! I am glad machines will take your jobs!");
+                }
+            } while (true);
         }
-        }
+
+//        static void createCharacters(){
+//            System.out.println("who");
+//            String firstCharacter;
+//            S
+//        }
 
         static void print(int i)
         {
@@ -57,6 +68,7 @@ public class Practice {
         static void dog(){
             System.out.println("You're awesome! ");
         }
+
 
 
 
