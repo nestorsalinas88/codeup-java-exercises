@@ -53,6 +53,11 @@ public class ArrayPractice {
 
 //        multidimensional array
 
+//        Think about problems and the way we find the solution
+
+//        Global company needs to store employee data in a network.
+
+
 
 
     }
