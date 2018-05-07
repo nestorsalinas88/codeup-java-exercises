@@ -20,20 +20,37 @@ public class Input {
         return (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes"));
     }
 
-    int getInt(int min, int max) {
-//  This method should keep prompting the user for input until they give an integer within the min and max.
-        System.out.println("Enter an number between " + min + " and " + max + ": " );
-        int check = getInt();
-        if (check < min || check > max){
-            return getInt(min, max);
-        } else {
-            return check;
-        }
-    }
-    int getInt(){
-        return scanner.nextInt();
+    public int getInt(int min, int max) {
+        System.out.print("Please input a number between " + min + " and "+ max + ": ");
+
+        int userInt = this.getInt();
+
+        return (userInt > max || userInt < min) ? getInt(min, max) : userInt;
+
     }
 
+    public int getInt(String prompt, int min, int max) {
+        System.out.print(prompt);
+        int userInt = this.getInt();
+
+        return (userInt > max || userInt < min) ? getInt(prompt, min, max) : userInt;
+    }
+
+    public int getInt(int prompt) {
+        System.out.print(prompt);
+        return getInt();
+    }
+
+    //Validate int input
+    public int getInt() {
+        try {
+            String inputInt  = this.scanner.nextLine();
+            return Integer.valueOf(inputInt);
+        } catch(NumberFormatException e) {
+            System.out.println("Try again. Fail. ");
+            return getInt();
+        }
+    }
     public double getDouble(double min, double max) {
 //    The getDouble method should do the same thing, but with decimal numbers.
         System.out.print("Please enter any real number between " + min + " and " + max + ": ");
@@ -89,6 +106,21 @@ public class Input {
     public double getDouble(String prompt){
         System.out.print(prompt);
         return getDouble();
+    }
+
+
+    public int getBinary(String prompt) {
+        System.out.print(prompt);
+        return getBinary();
+    }
+
+    public int getBinary() {
+        try {
+            String input = this.scanner.next();
+            return Integer.valueOf(input,2);
+        } catch(NumberFormatException e) {
+            return getBinary();
+        }
     }
 
 }
