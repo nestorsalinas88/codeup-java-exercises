@@ -8,7 +8,7 @@ public class Input {
     public Input(){
         this.scanner = new Scanner(System.in).useDelimiter("\n");
     }
-    String getString() {
+    public String getString() {
         return this.scanner.nextLine();
     }
 
@@ -44,6 +44,21 @@ public class Input {
             return check;
         }
     }
+
+    public boolean pressEnter() {
+        try
+        {
+            System.in.read();
+        }
+        catch(Exception e)
+        {}
+        return true;
+    }
+    public boolean pressEnter(String prompt) {
+        System.out.print(prompt);
+        return pressEnter();
+    }
+
     public double getDouble(){
         return scanner.nextDouble();
     }
