@@ -1,8 +1,11 @@
-package movies.html;
+package html;
 
-public class Span extends {
-    private String tag;
-    private String text;
-    private String[] attributes;
-    private boolean isBlockLevel;
+public class Span extends Element{
+ public Span(String text){
+     super(text, "span");
+ }
+// public boolean isBlockLevel() {
+//     return  isBlockLevel;
+// }
+
 }
