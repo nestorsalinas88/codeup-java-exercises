@@ -5,15 +5,14 @@ public class Rectangle {
     protected double length;
     protected  double width;
 
-//    need to get the l and w
 
 
-    public double getLength() {
-        return length;
+    public double getArea(){
+        return length * width;
     }
 
-    public double getWidth() {
-        return width;
+    public  double getPerimeter(){
+        return (length * 2) + (width * 2);
     }
 
 
