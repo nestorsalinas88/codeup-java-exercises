@@ -36,13 +36,13 @@ public class Practice {
         String userMiddle;
         Scanner us = new Scanner(System.in);
 
-        System.out.println("Como le podria servir?");
+        System.out.println("How can i help you?");
         userMiddle = us.nextLine();
 
 
             do {
                 if (userMiddle.contains("?")){
-                    System.out.println("Su pregunta e");
+                    System.out.println("Thats a dumb question ");
 
                 } else if (userMiddle.contains("!")){
                     System.out.printf("WOW! I am glad machines will take your jobs!");

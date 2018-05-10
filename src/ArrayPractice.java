@@ -28,11 +28,13 @@ public class ArrayPractice {
 //        System.out.println(matrix[2][2]);
 
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                System.out.printf("%d ",matrix[i][j]);
-            }
+
             System.out.printf("%n");
         }
+//        for (int j = 0; j < matrix[i].length; j++) {
+//            System.out.printf("%d ",matrix[i][j]);
+//        }
+//        this goes above
 
         String[] names = {
         "nestor", "John", "Richard"
