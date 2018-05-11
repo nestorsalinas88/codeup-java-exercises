@@ -1,11 +1,9 @@
-package Soccer;
+package Inventory;
 
-public class BicycleApplication extends Bicycle {
+public class BicycleApplication {
 
-    public int attack;
+    public static void main(String[] args) {
 
-
-    public void setAttack(int newAttack){
 
     }
 }
