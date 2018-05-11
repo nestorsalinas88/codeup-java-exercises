@@ -1,6 +1,6 @@
 package bookstore;
 
-public interface Purchase {
+public interface Cart {
 
     boolean confirmProductSelection();
 

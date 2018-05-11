@@ -1,18 +1,18 @@
-package Soccer;
+package Inventory;
 
-public class Brand extends Bicycle {
+public class MountainBike extends Bicycle {
+    public int seatHeight;
 
-    protected String brand;
-    protected double salary;
-
-    public Brand(String brand, double salary){
-//        super(name, team, position, attack,defense);
-        this.brand = brand;
-        this.salary = salary;
+    public MountainBike(int startHeight,
+                        int startCadence,
+                        int startSpeed,
+                        int startGear){
+        super(startCadence,startSpeed,startGear);
+        seatHeight =startHeight;
     }
 
+    public void setHeight(int newValue){
+        seatHeight = newValue;
 
-    public String getName(){
-        return brand + " " + salary;
     }
 }

@@ -1,8 +1,6 @@
 package bookstore;
 
-public class Customer extends Person{
+public class Customer{
 
-    public Customer(String name) {
-        super(name);
-    }
+
 }
