@@ -38,11 +38,4 @@ private double average;
         return name + " earned an average grade of " + getGradeAverage() + ".";
     }
 
-    public static void main(String[] args) {
-        Student student = new Student("Nestor");
-        student.addGrade(100);
-        student.addGrade(90);
-        student.addGrade(95);
-        System.out.println(student);
-    }
 }
