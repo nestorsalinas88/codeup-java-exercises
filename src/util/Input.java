@@ -51,12 +51,12 @@ public class Input {
             return getInt();
         }
     }
-    public double getDouble(double min, double max) {
+    public double getDouble(double min, double max) throws Exception {
 //    The getDouble method should do the same thing, but with decimal numbers.
         System.out.print("Please enter any real number between " + min + " and " + max + ": ");
         double check = getDouble();
         if(check < min || check > max) {
-            return getDouble(min, max);
+            throw new Exception(String.valueOf(getDouble(min, max)));
         } else {
             return check;
         }
@@ -99,7 +99,7 @@ public class Input {
         System.out.print(prompt);
         return getInt();
     }
-    public double getDouble(double min, double max, String prompt) {
+    public double getDouble(double min, double max, String prompt) throws Exception {
         System.out.println(prompt);
         return getDouble(min, max);
     }
