@@ -2,6 +2,7 @@ package bookstore;
 
 import util.Input;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -52,6 +53,7 @@ public abstract class Product {
                 new Movie("Movie", 5,"Steven Spielberg","kung fu",1993),
                 new Movie("Movie", 5,"Steven Spielberg","kung fu",1993),
                 new Movie("Movie", 5,"Steven Spielberg","kung fu",1993),
+
         };
     }
 
